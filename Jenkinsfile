@@ -28,7 +28,7 @@ pipeline {
 
         stage('Test available') {
           steps {
-            sh 'curl -s localhost:9889 | grep "An Interesting HTML Page"'
+            sh 'curl -s localhost:9889 | grep "Hello world"'
           }
         }
 
