@@ -1,6 +1,10 @@
+#!/usr/bin/env groovy
 pipeline {
   agent { 
-    label 'docker'
+    docker {
+            image 'nginx'
+            args '-u root'
+        }
   }
   
   stages {
