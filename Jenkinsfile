@@ -4,7 +4,7 @@ pipeline {
         stage('check-site'){
             steps {
                 script{
-                    sh './scripts/check-site.sh'
+                    sh '.check-site.sh'
                 }
             }
         }
